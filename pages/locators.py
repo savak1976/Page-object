@@ -8,8 +8,11 @@ class LoginPageLocators():
     login_form = (By.CSS_SELECTOR, "#login_form")
     passw_form = (By.CSS_SELECTOR, "#register_form")
     EMAIL = (By.XPATH, "//*[@id='register_form']/div[1]/div/input")
+#     PASS1 = (By.XPATH, "//*[@id='id_registration-password1']")
+#     PASS2 = (By.XPATH, "//*[@id='id_registration-password2']")
     PASS1 = (By.CSS_SELECTOR, '#id_registration-password1')
     PASS2 = (By.CSS_SELECTOR, '#id_registration-password2')
+
     REGISTER_BUTTON = (By.XPATH, "//button[@name='registration_submit']")
 
 class ProductPageLocators:
@@ -27,3 +30,5 @@ class BasePageLocators:
 class BasketPageLocators:
     MESSAGE_EMPTY_BASKET = (By.CSS_SELECTOR, "#content_inner")
     ITEMS_TO_BUY_NOW = (By.CSS_SELECTOR, ".basket-items")
+
+    
